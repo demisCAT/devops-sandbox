@@ -10,8 +10,8 @@ on:
 
 # Environment variables available to all jobs
 env:
-  DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
-  IMAGE_NAME: ${{ secrets.DOCKERHUB_USERNAME }}/devops-sandbox
+  DOCKERHUB_USERNAME: ${{secrets.DOCKERHUB_USERNAME}}
+  IMAGE_NAME: ${{secrets.DOCKERHUB_USERNAME}}/devops-sandbox
 
 jobs:
   # ──────────────────────────────────────
@@ -82,8 +82,8 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: ${{ secrets.DOCKERHUB_USERNAME }}
-          password: ${{ secrets.DOCKERHUB_TOKEN }}
+          username: ${{secrets.DOCKERHUB_USERNAME}}
+          password: ${{secrets.DOCKERHUB_TOKEN}}
           # These secrets are stored in GitHub (see step 5.5)
 
       - name: Build and push
