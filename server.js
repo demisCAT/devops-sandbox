@@ -17,7 +17,7 @@ app.get('/health', (req, res) => {
 // Only start the server if this file is run directly (not imported by tests)
 if (require.main === module) {
   app.listen(PORT, () => {
-    console.log(`Server runNNning on http://localhost:${PORT}`);
+    console.log(`Server DEMIS on http://localhost:${PORT}`);
   });
 }
 
