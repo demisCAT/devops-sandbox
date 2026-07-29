@@ -3,7 +3,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello from DEMIS !!! DevOps Sandbox!');
+  res.send('Hello from !!!DEMIS !!! DevOps Sandbox!');
 });
 
 app.get('/health', (req, res) => {
